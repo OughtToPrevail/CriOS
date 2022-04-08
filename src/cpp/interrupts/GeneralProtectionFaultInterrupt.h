@@ -1,0 +1,13 @@
+#ifndef CRIOS_GENERALPROTECTIONFAULTINTERRUPT_H
+#define CRIOS_GENERALPROTECTIONFAULTINTERRUPT_H
+
+#include "InterruptHandler.h"
+
+#define GENERAL_PROTECTION_FAULT_INTERRUPT 0xD
+
+extern "C"
+{
+void generalProtectionFaultInterrupt(CPUState, StackState);
+};
+
+#endif //CRIOS_GENERALPROTECTIONFAULTINTERRUPT_H
